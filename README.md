@@ -1,8 +1,8 @@
 # Unix Programming Portfolio
 A collection of C programs, bash and python scripts that I wrote as part of my Unix Programming class in UCD. These projects helped me develop an understanding as to how Unix systems work and how to use them. A vast range of unix features are explored including, 
 * Basic use of system calls from the shell and in C 
-* Multi-programming and mult-theading in C 
-* The C compliation process 
+* Multiprogramming and mult-theading in C 
+* The C compilation process 
 * Bash scripting basics 
 * Python scripting basics
 
@@ -26,12 +26,12 @@ Sample Call
 ```
 python apache_log_search.py -l apache.log -d 09Feb2013
 ```
-This will list the IP's and the number of their logs on the 9th of Febuary 2013 in the apache.log file 
+This will list the IP's and the number of their logs on the 9th of February 2013 in the apache.log file 
 
 ## Directory Copier - Bash
 This simple script copies a given directory tree into a new given directory. Any .png files in the original directory are converted to .jpg in the new one.
 
-To run the script be sure to give executable permissons
+To run the script be sure to give executable permissions
 ```
 chmod dir_copy.sh +x
 ```
@@ -43,7 +43,7 @@ For example, using the `test_input` directory included.
 This will create a new directory 'test_output' with the exact directory structure of test_input and any of its .png files in the form of .jpg files. 
 
 ## Multi-threaded Matrix Multiplier - C
-This is a set of two C programs that make use of POSIX threads and sockets to divide the task of multiplying two matrices among different processes that may or may not exist on seperate machines. The idea behind this is that the task could be performed much quicker in the case of very large input matricies.
+This is a set of two C programs that make use of POSIX threads and sockets to divide the task of multiplying two matrices among different processes that may or may not exist on seperate machines. The idea behind this is that the task could be performed much quicker in the case of very large input matrices..
 
 2 Programs are included, a `master.c` program and a `worker.c` program
 
@@ -62,7 +62,7 @@ Here I create two 10*10 matrices to be multiplied among 5 processes
 ```
 ./worker localhost
 ```
-Here i create a worker searching for a master on my local machine (localhost is not nessesary here as it will default to localhost anyway)
+Here i create a worker searching for a master on my local machine (localhost is not necessary here as it will default to localhost anyway)
 
 ## Bash Shell Copy - C
 A C program that makes use of various unix system calls to mimic a bash shell. It can change directories and call all system commands. The prompt displays the current date and time and a # instead of a $.
